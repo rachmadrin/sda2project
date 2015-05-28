@@ -1,5 +1,5 @@
 # sda2project
-Repository ini digunakan dakam pembuatan tugas akhir SDA2.
+Repository ini digunakan dalam pembuatan tugas akhir SDA2.
 
 Kita akan membuat simulasi untuk mata pelajaran Fisika, dengan materi GLB, GLBB, GMB, dan Gerak parabola.
 Ketua Project ini adalah Rachmad Rinaldie,
