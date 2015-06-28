@@ -45,10 +45,25 @@ public class beranda extends javax.swing.JFrame {
         jLabel1.setText("Selamat datang, di simulasi perhitungan fisika.");
 
         glbButton.setText("GLB");
+        glbButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                glbButtonActionPerformed(evt);
+            }
+        });
 
         glbbButton.setText("GLBB");
+        glbbButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                glbbButtonActionPerformed(evt);
+            }
+        });
 
         gmbButton.setText("GMB");
+        gmbButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gmbButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -95,6 +110,18 @@ public class beranda extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void glbButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_glbButtonActionPerformed
+        tampilGLB.setVisible(true);
+    }//GEN-LAST:event_glbButtonActionPerformed
+
+    private void glbbButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_glbbButtonActionPerformed
+        tampilGLBB.setVisible(true);
+    }//GEN-LAST:event_glbbButtonActionPerformed
+
+    private void gmbButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gmbButtonActionPerformed
+        tampilGMB.setVisible(true);
+    }//GEN-LAST:event_gmbButtonActionPerformed
 
     /**
      * @param args the command line arguments

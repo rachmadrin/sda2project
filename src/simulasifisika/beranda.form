@@ -91,16 +91,25 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="GLB"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="glbButtonActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JToggleButton" name="glbbButton">
           <Properties>
             <Property name="text" type="java.lang.String" value="GLBB"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="glbbButtonActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JToggleButton" name="gmbButton">
           <Properties>
             <Property name="text" type="java.lang.String" value="GMB"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gmbButtonActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
