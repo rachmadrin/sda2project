@@ -53,8 +53,15 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="gmbButton" alignment="0" max="32767" attributes="0"/>
+                          <Component id="glbButton" alignment="0" max="32767" attributes="0"/>
+                          <Component id="glbbButton" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
                   <EmptySpace min="0" pref="61" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -63,7 +70,13 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="259" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
+                  <Component id="glbButton" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="glbbButton" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="gmbButton" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="51" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -72,6 +85,21 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="text" type="java.lang.String" value="Selamat datang, di simulasi perhitungan fisika."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JToggleButton" name="glbButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="GLB"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JToggleButton" name="glbbButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="GLBB"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JToggleButton" name="gmbButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="GMB"/>
           </Properties>
         </Component>
       </SubComponents>
