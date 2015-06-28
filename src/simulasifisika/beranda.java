@@ -10,7 +10,11 @@ package simulasifisika;
  * @author enda
  */
 public class beranda extends javax.swing.JFrame {
-
+    
+    public glbView tampilGLB = new glbView();
+    public glbbView tampilGLBB = new glbbView();
+    public gmbView tampilGMB = new gmbView();
+    
     /**
      * Creates new form beranda
      */
