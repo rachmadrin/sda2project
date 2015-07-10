@@ -118,10 +118,10 @@ public class gmbView extends javax.swing.JFrame {
         jPanel10 = new javax.swing.JPanel();
         jLabel64 = new javax.swing.JLabel();
         jLabel65 = new javax.swing.JLabel();
-        jLabel66 = new javax.swing.JLabel();
+        jrjrSoal = new javax.swing.JLabel();
         jLabel67 = new javax.swing.JLabel();
         jLabel68 = new javax.swing.JLabel();
-        jLabel69 = new javax.swing.JLabel();
+        kelajuanLinearSoal = new javax.swing.JLabel();
         jLabel70 = new javax.swing.JLabel();
         jLabel71 = new javax.swing.JLabel();
         jLabel72 = new javax.swing.JLabel();
@@ -702,13 +702,13 @@ public class gmbView extends javax.swing.JFrame {
         jLabel65.setFont(new java.awt.Font("Open Sans Extrabold", 0, 15)); // NOI18N
         jLabel65.setText("Kecepatan Anguler");
 
-        jLabel66.setText("48m");
+        jrjrSoal.setText("48");
 
-        jLabel67.setText("diputar melingkar beraturan.");
+        jLabel67.setText("m diputar melingkar beraturan.");
 
         jLabel68.setText("Kelajuan linear pentil pada roda tersebut");
 
-        jLabel69.setText("1,2");
+        kelajuanLinearSoal.setText("1,2");
 
         jLabel70.setText("m/s , maka kecepatan");
 
@@ -743,14 +743,14 @@ public class gmbView extends javax.swing.JFrame {
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addComponent(jLabel64)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel66)
+                        .addComponent(jrjrSoal)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel67))
                     .addComponent(jLabel65)
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addComponent(jLabel68)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel69)
+                        .addComponent(kelajuanLinearSoal)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel70))
                     .addComponent(jLabel71)
@@ -764,7 +764,7 @@ public class gmbView extends javax.swing.JFrame {
                             .addComponent(jariJari2)))
                     .addComponent(angulernya)
                     .addComponent(a))
-                .addContainerGap(65, Short.MAX_VALUE))
+                .addContainerGap(62, Short.MAX_VALUE))
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -774,12 +774,12 @@ public class gmbView extends javax.swing.JFrame {
                 .addGap(22, 22, 22)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel64)
-                    .addComponent(jLabel66)
+                    .addComponent(jrjrSoal)
                     .addComponent(jLabel67))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel68)
-                    .addComponent(jLabel69)
+                    .addComponent(kelajuanLinearSoal)
                     .addComponent(jLabel70))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel71)
@@ -804,7 +804,7 @@ public class gmbView extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 561, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -923,7 +923,9 @@ public class gmbView extends javax.swing.JFrame {
         jrjr = jrJari/100;
         
         c = kcptnLinear/jrjr;
-        System.out.println(c);
+        a.setText(String.valueOf(c)+" rad/s");
+        jrjrSoal.setText(String.valueOf(jrJari));
+        kelajuanLinearSoal.setText(String.valueOf(kcptnLinear));
     }//GEN-LAST:event_angulernyaActionPerformed
 
     /**
@@ -1031,10 +1033,8 @@ public class gmbView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel64;
     private javax.swing.JLabel jLabel65;
-    private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel67;
     private javax.swing.JLabel jLabel68;
-    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel71;
@@ -1055,11 +1055,13 @@ public class gmbView extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField jariJari;
     private javax.swing.JTextField jariJari2;
+    private javax.swing.JLabel jrjrSoal;
     private javax.swing.JTextField jumlahPutaran;
     private javax.swing.JButton keMenu;
     private javax.swing.JLabel kecepatanLinear;
     private javax.swing.JLabel kecepatanLinearTepiRoda;
     private javax.swing.JTextField kelajuanLinear2;
+    private javax.swing.JLabel kelajuanLinearSoal;
     private javax.swing.JLabel pengertianGMB;
     private javax.swing.JTextField periode;
     private javax.swing.JLabel periodeSoal;
