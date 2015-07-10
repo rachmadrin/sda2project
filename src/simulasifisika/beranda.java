@@ -112,14 +112,17 @@ public class beranda extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void glbButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_glbButtonActionPerformed
+        this.setVisible(false);
         tampilGLB.setVisible(true);
     }//GEN-LAST:event_glbButtonActionPerformed
 
     private void glbbButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_glbbButtonActionPerformed
+        this.setVisible(false);
         tampilGLBB.setVisible(true);
     }//GEN-LAST:event_glbbButtonActionPerformed
 
     private void gmbButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gmbButtonActionPerformed
+        this.setVisible(false);
         tampilGMB.setVisible(true);
     }//GEN-LAST:event_gmbButtonActionPerformed
 
