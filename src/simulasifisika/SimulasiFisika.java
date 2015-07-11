@@ -17,8 +17,9 @@ public class SimulasiFisika {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Selamat Datang Semuanya!");
-        beranda tampilBeranda = new beranda();
+        logIn tampilBeranda = new logIn();
         tampilBeranda.setVisible(true);
+        
     }
     
 }

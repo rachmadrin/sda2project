@@ -15,11 +15,17 @@ public class beranda extends javax.swing.JFrame {
     public glbbView tampilGLBB = new glbbView();
     public gmbView tampilGMB = new gmbView();
     
+    logIn name = new logIn();
+    
+    
+    
     /**
      * Creates new form beranda
      */
     public beranda() {
-        initComponents();
+        initComponents(); 
+        welcome.setText("Selamat datang, "+name.getnamaAsli());
+        System.out.println(name.getnamaAsli());
     }
 
     /**
@@ -33,7 +39,7 @@ public class beranda extends javax.swing.JFrame {
 
         jButton1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        welcome = new javax.swing.JLabel();
         glbButton = new javax.swing.JToggleButton();
         glbbButton = new javax.swing.JToggleButton();
         gmbButton = new javax.swing.JToggleButton();
@@ -42,7 +48,7 @@ public class beranda extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Selamat datang, di simulasi perhitungan fisika.");
+        welcome.setText("Selamat datang");
 
         glbButton.setText("GLB");
         glbButton.addActionListener(new java.awt.event.ActionListener() {
@@ -71,17 +77,17 @@ public class beranda extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
+                    .addComponent(welcome)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(gmbButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(glbButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(glbbButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGap(0, 61, Short.MAX_VALUE))
+                .addGap(0, 268, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel1)
+                .addComponent(welcome)
                 .addGap(109, 109, 109)
                 .addComponent(glbButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -166,7 +172,7 @@ public class beranda extends javax.swing.JFrame {
     private javax.swing.JToggleButton glbbButton;
     private javax.swing.JToggleButton gmbButton;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel welcome;
     // End of variables declaration//GEN-END:variables
 }
